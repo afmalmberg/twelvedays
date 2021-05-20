@@ -282,7 +282,7 @@ a.sourceLine {
 <span id="cb14-17"><a href="#cb14-17" aria-hidden="true" tabindex="-1"></a>    phrases <span class="ot">&lt;-</span> dataset <span class="sc">%&gt;%</span> </span>
 <span id="cb14-18"><a href="#cb14-18" aria-hidden="true" tabindex="-1"></a>      <span class="fu">pull</span>({{phrase_col}})</span>
 <span id="cb14-19"><a href="#cb14-19" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> (num <span class="sc">&gt;</span> <span class="dv">1</span>) {</span>
-<span id="cb14-20"><a href="#cb14-20" aria-hidden="true" tabindex="-1"></a>      phrases[<span class="fu">c</span>(<span class="dv">1</span>)] <span class="ot">&lt;-</span> <span class="fu">paste0</span>(<span class="st">&quot;and &quot;</span>, phrases[<span class="fu">c</span>(<span class="dv">1</span>)])</span>
+<span id="cb14-20"><a href="#cb14-20" aria-hidden="true" tabindex="-1"></a>      phrases[<span class="fu">c</span>(<span class="dv">1</span>)] <span class="ot">&lt;-</span> <span class="fu">paste0</span>(<span class="st">&quot;and &quot;</span>, phrases[<span class="fu">c</span>(<span class="dv">1</span>)], <span class="st">&quot;.&quot;</span>)</span>
 <span id="cb14-21"><a href="#cb14-21" aria-hidden="true" tabindex="-1"></a>    }</span>
 <span id="cb14-22"><a href="#cb14-22" aria-hidden="true" tabindex="-1"></a>    phrases <span class="ot">&lt;-</span> <span class="fu">str_c</span>(phrases[<span class="fu">c</span>(num<span class="sc">:</span><span class="dv">0</span>)], <span class="at">collapse =</span> <span class="st">&quot;</span><span class="sc">\n</span><span class="st">&quot;</span>)</span>
 <span id="cb14-23"><a href="#cb14-23" aria-hidden="true" tabindex="-1"></a>    </span>
@@ -297,7 +297,7 @@ a.sourceLine {
 <span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a>          <span class="at">phrase_col =</span> Full.Phrase)</span></code></pre></div>
 <pre><code>## On the second day of Christmas, my true love sent to me,
 ## two turtle doves
-## and a partridge in a pear tree</code></pre>
+## and a partridge in a pear tree.</code></pre>
 <p>should return</p>
 <pre><code>On the second day of Christmas, my true love sent to me,
 two turtle doves 
@@ -327,29 +327,29 @@ and a partridge in a pear tree.</code></pre>
 ## a partridge in a pear tree
 ## On the second day of Christmas, my true love sent to me,
 ## two turtle doves
-## and a partridge in a pear tree
+## and a partridge in a pear tree.
 ## On the third day of Christmas, my true love sent to me,
 ## three french hens
 ## two turtle doves
-## and a partridge in a pear tree
+## and a partridge in a pear tree.
 ## On the fourth day of Christmas, my true love sent to me,
 ## four calling birds
 ## three french hens
 ## two turtle doves
-## and a partridge in a pear tree
+## and a partridge in a pear tree.
 ## On the fifth day of Christmas, my true love sent to me,
 ## five golden rings
 ## four calling birds
 ## three french hens
 ## two turtle doves
-## and a partridge in a pear tree
+## and a partridge in a pear tree.
 ## On the sixth day of Christmas, my true love sent to me,
 ## six geese a-laying
 ## five golden rings
 ## four calling birds
 ## three french hens
 ## two turtle doves
-## and a partridge in a pear tree
+## and a partridge in a pear tree.
 ## On the seventh day of Christmas, my true love sent to me,
 ## seven swans a-swimming
 ## six geese a-laying
@@ -357,7 +357,7 @@ and a partridge in a pear tree.</code></pre>
 ## four calling birds
 ## three french hens
 ## two turtle doves
-## and a partridge in a pear tree
+## and a partridge in a pear tree.
 ## On the eighth day of Christmas, my true love sent to me,
 ## eight maids a-milking
 ## seven swans a-swimming
@@ -366,7 +366,7 @@ and a partridge in a pear tree.</code></pre>
 ## four calling birds
 ## three french hens
 ## two turtle doves
-## and a partridge in a pear tree
+## and a partridge in a pear tree.
 ## On the ninth day of Christmas, my true love sent to me,
 ## nine ladies dancing
 ## eight maids a-milking
@@ -376,7 +376,7 @@ and a partridge in a pear tree.</code></pre>
 ## four calling birds
 ## three french hens
 ## two turtle doves
-## and a partridge in a pear tree
+## and a partridge in a pear tree.
 ## On the tenth day of Christmas, my true love sent to me,
 ## ten lords a-leaping
 ## nine ladies dancing
@@ -387,7 +387,7 @@ and a partridge in a pear tree.</code></pre>
 ## four calling birds
 ## three french hens
 ## two turtle doves
-## and a partridge in a pear tree
+## and a partridge in a pear tree.
 ## On the eleventh day of Christmas, my true love sent to me,
 ## eleven pipers piping
 ## ten lords a-leaping
@@ -399,7 +399,7 @@ and a partridge in a pear tree.</code></pre>
 ## four calling birds
 ## three french hens
 ## two turtle doves
-## and a partridge in a pear tree
+## and a partridge in a pear tree.
 ## On the twelfth day of Christmas, my true love sent to me,
 ## twelve drummers drumming
 ## eleven pipers piping
@@ -412,7 +412,7 @@ and a partridge in a pear tree.</code></pre>
 ## four calling birds
 ## three french hens
 ## two turtle doves
-## and a partridge in a pear tree</code></pre>
+## and a partridge in a pear tree.</code></pre>
 </div>
 <div id="step-five-show-me-your-work" class="section level2">
 <h2>Step Five: Show Me Your Work!</h2>

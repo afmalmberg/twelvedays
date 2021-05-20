@@ -221,7 +221,7 @@ sing_line <- function(dataset, num, phrase_col){
     phrases <- dataset %>% 
       pull({{phrase_col}})
     if (num > 1) {
-      phrases[c(1)] <- paste0("and ", phrases[c(1)])
+      phrases[c(1)] <- paste0("and ", phrases[c(1)], ".")
     }
     phrases <- str_c(phrases[c(num:0)], collapse = "\n")
     
