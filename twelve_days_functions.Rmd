@@ -108,22 +108,8 @@ purrr::map_chr(xmas$Gift.Item, pluralize_gift)
 ## Step Two: Creating sentences
 
 Write a function called `make_phrase` that takes as input the necessary information, 
-and returns a phrase.  For example, 
+and returns a phrase.  
 
-```{r}
-make_phrase(num = 10, 
-            num_word = "ten", 
-            item = "lord", 
-            verb = "a-leaping", 
-            adjective = "", 
-            location = "")
-```
-
-should return
-
-```
-"ten lords a-leaping"
-```
 
 ```{r}
 make_phrase <- function(num, num_word, item, verb, adjective, location) {
@@ -161,6 +147,22 @@ make_phrase <- function(num, num_word, item, verb, adjective, location) {
 }
 ```
 
+For example, 
+
+```{r}
+make_phrase(num = 10, 
+            num_word = "ten", 
+            item = "lord", 
+            verb = "a-leaping", 
+            adjective = "", 
+            location = "")
+```
+
+should return
+
+```
+"ten lords a-leaping"
+```
 
 # Test Your Function
 
